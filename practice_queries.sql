@@ -69,3 +69,13 @@ select*
 from Employee where not first_Name='dinseh' and not first_Name='ragavi';
 select *
 from Employee where first_Name='dinesh' or first_Name='Hasan';
+select *
+from Employee where salary > 60000;
+select *
+from Employee where salary between 50000 and 70000;
+select *
+concat(first_Name,' ',last_Name) as full_Name from Employee where salary 50000;
+select *
+first_Name ,salary from Employee order by salary asc;
+select *
+from Employee where salary between 50000 and 70000 order by first_Name asc;
